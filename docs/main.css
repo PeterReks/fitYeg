@@ -1,0 +1,301 @@
+/* [ON BIG SCREEN] */
+/* Wrapper */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+
+body {
+  box-sizing: border-box;
+  font-family: Arial;
+  margin:0;
+  padding:0;
+  font-family:'Poppins';
+  overflow-x:hidden;
+}
+body h1 {
+  margin:0;
+}
+header {
+  width: 100%;
+  background: #202020;
+  /* Optional */
+  position: fixed;
+  top: 0;
+  height:5vh;
+  display:flex;
+  align-items:center;
+  justify-content:flex-end;
+}
+
+/* Hide Hamburger */
+header label, #hamburger { display: none; }
+
+/* Horizontal Menu Items */
+#hamItems
+{
+  display: flex;
+  justify-content:flex-end;
+  margin-right:30px;
+  font-family: Arial;
+}
+
+#hamItems a {
+  padding: 10px;
+  color: white;
+  text-decoration: none;
+  text-align: center;
+}
+#hamItems a:hover {
+  background: #401408;
+}
+
+.active {
+  background-color:green;
+}
+
+.showcase {
+  height:100vh;
+  background-image:url("fitYegBG.jpg");
+  background-repeat:no-repeat;
+  margin:0px;
+  background-size:cover;
+  background-position:center;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  margin-bottom:100px;
+}
+
+.showcase h1 {
+  color:white;
+  text-shadow: 0.5px 2px 2px black;
+  font-size:8em;
+  margin-bottom:0px;
+  margin:0px;
+}
+
+.smallHeader {
+  font-size:0.7em;
+}
+
+.showcase p {
+  font-size:1.5em;
+  color:white;
+  text-shadow: 0.5px 2px 2px black;
+}
+
+.showcaseText {
+  text-align:center;
+  background-color: rgba(131, 140, 173, 0.5);
+  width:100%;
+  box-sizing:border-box;
+  margin-top:100px;
+}
+
+#learnButton {
+  text-decoration:none;
+  color: white;
+  background-color: #F07780;
+  width:10%;
+  font-size: 1.5em;
+  text-align:center;
+  border-radius:10px;
+  padding:5px;
+  margin-top:40px;
+}
+
+.smallAboutUs,
+.charitySection {
+  margin:20px;
+  display:flex;
+  justify-content:center;
+  margin-bottom:100px;
+}
+
+.box {
+  display:flex;
+  justify-content:space-around;
+}
+
+.box img {
+  width:50%;
+  height:auto;
+}
+
+.boxText {
+  display:flex;
+  flex-direction:column;
+  justify-content:space-around;
+  width:42%;
+}
+
+.boxText {
+}
+
+.boxText h1 {
+  font-size: 2.5em;
+  text-transform: uppercase;
+}
+
+
+.signUpBar {
+  display:flex;
+  background-color: #F07780;
+  width:100vw;
+  height:80px;
+  align-items:center;
+  justify-content:center;
+  margin-bottom:100px;
+}
+
+.signUpBar input {
+  margin-left: 50px;
+  border-radius: 5px;
+  border:none;
+  height: 20px;
+}
+
+
+footer {
+  width:100%;
+  height: 160px;
+  background-color: black;
+}
+
+
+
+
+/* [ON SMALL SCREENS] */
+@media (max-width: 768px){
+  /* Show Hamburger Icon */
+  header {
+    display:block;
+    height:5vh;
+  }
+
+  header label {
+    display: inline-block;
+    color: white;
+    background: #a02620;
+    height:5vh;
+    padding-left: 3px;
+    padding-right:3px;
+  }
+
+  /* Break down menu items into vertical */
+  #hamItems {
+    margin-right: 0;
+  }
+
+  #hamItems a {
+    box-sizing: border-box;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #333;
+    background-color:#202020;
+  }
+
+  /* Toggle Show/Hide Menu */
+  #hamItems { display: none; }
+  header input:checked ~ #hamItems { display: block; }
+
+
+
+.showcase h1 {
+  font-size:6em;
+}
+
+.showcase p {
+
+}
+
+.showcase a {
+  margin-top: 180px;
+}
+
+#learnButton {
+  font-size:0.8em;
+}
+
+/* [DOES NOT MATTER] */
+html, body {
+  padding: 0;
+  margin: 0;
+  font-family: arial, sans-serif;
+}
+
+.box {
+  flex-direction:column;
+  align-items:center;
+}
+
+.boxText {
+  width:80%;
+  text-align:center;
+}
+
+.boxText h1 {
+  font-size: 1.5em;
+}
+
+.boxText p {
+  font-size:0.9em;
+}
+
+
+.box img {
+  width:100%;
+  height:auto;
+}
+
+.smallAboutUs img {
+  margin-top:20px;
+}
+.signUpBar {
+  flex-direction:column;
+  align-items:center;
+  font-size:0.5em;
+  margin:0;
+  margin-bottom:50px;
+}
+
+.signUpBar h1 {
+  width: 75%;
+  text-align:center;
+  margin-bottom:10px
+}
+
+.signUpBar input {
+  margin:0px;
+}
+
+footer {
+width:100vw;
+}
+
+
+}
+
+
+@media (max-width: 300px) {
+
+  .showcase h1 {
+    font-size:4em;
+  }
+
+  .showcase p {
+    font-size:0.8em;
+    width:76%;
+    text-align:center;
+    margin:0px auto;
+  }
+
+  .showcaseText {
+    padding-bottom: 10px;
+  }
+
+  #learnButton {
+    font-size:0.5em;
+    width:35%;
+  }
+
+}

@@ -1,0 +1,1 @@
+A website for Fitness enthusiasts in the YEG(Edmonton). This site will promote fitness/fitness plans and fitness apparel, with a percentage going to charity.
