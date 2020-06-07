@@ -208,7 +208,7 @@ footer {
 }
 
 .showcase p {
-
+font-size: 0.2em;
 }
 
 .showcase a {
@@ -221,7 +221,7 @@ footer {
 
 /* [DOES NOT MATTER] */
 
-}
+
 
 .box {
   flex-direction:column;
