@@ -105,15 +105,18 @@ header label, #hamburger { display: none; }
 
 .smallAboutUs,
 .charitySection {
-  margin:20px;
+  margin:10px;
   display:flex;
   justify-content:center;
   margin-bottom:100px;
+  padding: 10px;
+  background-color: #E7E7E7;
 }
 
 .box {
   display:flex;
   justify-content:space-around;
+  background-color: #E7E7E7;
 }
 
 .box img {
@@ -165,7 +168,7 @@ footer {
 
 
 /* [ON SMALL SCREENS] */
-@media (max-width: 768px){
+@media (max-width: 768px) {
   /* Show Hamburger Icon */
   header {
     display:block;
